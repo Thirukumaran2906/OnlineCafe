@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:black;
+  }
+  .box ,.box2{
+    border-bottom:1px solid wheat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    }
+    
+  .con {
+    width: 100%;
+    height:50% ;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div {
+    margin: 3px;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .outer{
+    border-bottom: 2px solid white;
+  }
+  .imgbox{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 18.5px;
+  }
+  
+  div img {
+    border-top-left-radius: 18.5px;
+    border-top-right-radius: 18.5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  button{
+    padding:2px;
+    width: 50px;
+    height: 30px;
+    background-color: goldenrod;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+.mid-header{
+  width: 100%;
+  height: 200px;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mid-header h1{
+  font-size:3rem;
+}
+.mid-header h3{
+  font-size:1rem;
+}
+.choose{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+  width: 200px;
+  height: 30px;
+  background-color: goldenrod;
+  border-radius: 20px;
+  border: 1px solid #eee;
+}
+.choose:hover{
+  outline: 2px solid wheat;
+  transition: all linear .1s;
+  border: 2px solid saddlebrown;
+}
+.top-order-header{
+  color: #eee;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.top-order-header{
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* ------------------cart-------------------- */
+#cart-redirect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  color: chartreuse;
+  border:  2px solid gold;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+  @media (max-width :650px)
+  {
+    div{
+      height: 250px;
+      width: 200px;
+    }
+    .con{
+      font-size: 13px;
+    }
+    button{
+      width: 30px;
+      height: 20px;
+      overflow-y: hidden;
+    }
+    .mid-header h1{
+      font-size:2rem;
+    }
+    .mid-header h3{
+      font-size:1rem;
+    }
+  }
+  
